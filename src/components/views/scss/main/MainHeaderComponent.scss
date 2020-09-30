@@ -1,0 +1,57 @@
+.MainPageHeaderComponentContainer {
+  width: auto;
+  height: 80vh;
+  background-color: black;
+  position: relative;
+
+  .PosterClassName {
+    width: 100%;
+    object-fit: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+  }
+
+  .PosterContent {
+    background: rgba(18,18,18, 0.6) !important;
+    outline-offset: -100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+
+    .WriteContainer {
+      p {
+        max-width: 700px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .ItemsContent {
+        position: absolute;
+        top: 30%;
+      }
+    }
+  }
+
+  #PosterItem {
+    flex: 1;
+  }
+
+ #PosterItem2 {
+    flex: 0.5;
+  }
+
+  .PosterImage {
+    width: 20px;
+
+    .PosterIcon {
+      object-fit: cover;
+      height: 60vh;
+    }
+  }
+
+}
