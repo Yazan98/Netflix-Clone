@@ -25,7 +25,7 @@ export default class HomePageComponent extends React.Component<{}, MainPageRespo
         return (
             <div className="HomePageComponentContainer">
                 <ToolbarComponent />
-                { this.state.status ? this.renderTrendingCover(this.state.items[0]) : this.renderErrorCompnent() }
+                { this.state.status ? this.renderTrendingCover(this.state.items[14]) : this.renderErrorCompnent() }
                 { this.state.status ? this.renderTrendingItems(this.state.items) : this.renderErrorCompnent() }
                 { this.state.status ? this.renderPopularItems(this.state.popularItems) : this.renderErrorCompnent() }
                 { this.state.status ? this.renderTopRatedItems(this.state.topRated) : this.renderErrorCompnent() }

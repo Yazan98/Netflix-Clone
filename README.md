@@ -1,44 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Netflix Clone
+This Project is a Training Project TO Create , Apply Some SASS Styles, Techniques , with React.js Operaions Such As Dialogs, StateFul, Stateless Componenets, Props , Etc
 
-## Available Scripts
+# Libraries
+1. React.js
+2. React Router
+3. Material UI
+4. Google Fonts
 
-In the project directory, you can run:
+![New Project (2)](https://user-images.githubusercontent.com/29167110/94851433-4e39d200-03dd-11eb-80af-bd7c2efcf2ff.jpg)
 
-### `yarn start`
+![New Project (3)](https://user-images.githubusercontent.com/29167110/94851430-4da13b80-03dd-11eb-9ab8-0a3f58583781.jpg)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![New Project (4)](https://user-images.githubusercontent.com/29167110/94851428-4c700e80-03dd-11eb-8f30-b02b605c7a06.jpg)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![New Project (1)](https://user-images.githubusercontent.com/29167110/94851435-4ed26880-03dd-11eb-8680-aaed2e9f2efb.png)
