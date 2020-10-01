@@ -58,7 +58,7 @@ export default class HomePageComponent extends React.Component<{}, MainPageRespo
     }
 
     private renderErrorCompnent() {
-        return <h1>Error</h1>
+        return <div style={{ height: "100vh", backgroundColor: "black" }}></div>
     }
 
     componentDidMount() {

@@ -34,59 +34,74 @@
       padding: 2em;
       display: flex;
 
-      .TrendingItem:hover {
-        .ItemContent {
-          display: block;
-          -webkit-transition: opacity 2s ease-in;
-          -moz-transition: opacity 2s ease-in;
-          -o-transition: opacity 2s ease-in;
-          -ms-transition: opacity 2s ease-in;
-          transition: opacity 2s ease-in;
-        }
+      .RowItem:hover {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1);
+        transition-duration: 1s;
       }
 
-      .TrendingItem {
-        margin-left: 10px;
-        margin-right: 10px;
-        position: relative;
+      .RowItem {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1);
+        transition-duration: 1s;
 
-        .ItemContent {
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: rgba(18,18,18, 0.6) !important;
-          outline-offset: -100px;
-          overflow: hidden;
-          height: 300px;
-          width: 100%;
-          display: none;
-          -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-          -moz-animation: fadein 1s; /* Firefox < 16 */
-          -ms-animation: fadein 1s; /* Internet Explorer */
-          -o-animation: fadein 1s; /* Opera < 12.1 */
-          animation: fadein 1s;
-
-          .FloatingContainer {
-            color: white;
-            font-size: small;
-            padding: 20px 5px;
-
-            .Description {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              display: -webkit-box;
-              -webkit-line-clamp: 5; /* number of lines to show */
-              -webkit-box-orient: vertical;
-            }
+        .TrendingItem:hover {
+          .ItemContent {
+            display: block;
+            -webkit-transition: opacity 2s ease-in-out;
+            -moz-transition: opacity 2s ease-in-out;
+            -o-transition: opacity 2s ease-in-out;
+            -ms-transition: opacity 2s ease-in-out;
+            transition: all 0.5s ease-in-out;
           }
         }
 
-        .TrendingItemImage {
-          object-fit: cover;
-          width: 200px;
-          height: 300px;
+        .TrendingItem {
+          margin-left: 10px;
+          margin-right: 10px;
+          position: relative;
+          transform: scale(1);
+          transition: 2s ease-in-out;
+
+          .ItemContent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(18, 18, 18, 0.6) !important;
+            outline-offset: -100px;
+            overflow: hidden;
+            height: 300px;
+            width: 100%;
+            display: none;
+            -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 1s; /* Firefox < 16 */
+            -ms-animation: fadein 1s; /* Internet Explorer */
+            -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+
+            .FloatingContainer {
+              color: white;
+              font-size: small;
+              padding: 20px 5px;
+
+              .Description {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 5; /* number of lines to show */
+                -webkit-box-orient: vertical;
+              }
+            }
+          }
+
+          .TrendingItemImage {
+            object-fit: cover;
+            width: 200px;
+            height: 300px;
+          }
         }
       }
+
     }
   }
 }

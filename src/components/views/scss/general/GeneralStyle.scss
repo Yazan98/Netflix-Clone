@@ -2,6 +2,8 @@
   .ToolbarContainer {
     display: flex;
     padding: 1rem;
+    //background: rgb(0,0,0);
+    //background: linear-gradient(0deg, rgba(0,0,0,0.4458158263305322) 0%, rgba(253,45,45,0.21612394957983194) 100%);
 
     .ProfileContainer {
       display: flex;
@@ -49,6 +51,50 @@
         width: 150px;
         object-fit: cover;
       }
+    }
+  }
+}
+
+.ColumnMoviesComponentContainer {
+  color: white;
+
+  .TrendingRowComponentContainer {
+    .Title {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .TrendingRow {
+      display: block;
+      padding: 20px;
+
+      .RowItem {
+        .TrendingItem {
+          display: flex;
+
+          img {
+            margin-top: 50px;
+          }
+
+          #item {
+            flex: 1;
+            margin: 30px;
+          padding: 10px;
+          }
+
+          .ItemContent {
+            .FloatingContainer {
+              padding: 40px;
+              margin-top: 8rem;
+
+              .Description {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }

@@ -12,7 +12,9 @@ export default class ToolbarComponent extends React.Component<{}, SearchProps> {
     constructor(props: any) {
         super(props);
         this.state = {
-            isShow: false
+            isShow: false,
+            searchText: "",
+            searchClicked: false
         }
     }
 
@@ -26,10 +28,8 @@ export default class ToolbarComponent extends React.Component<{}, SearchProps> {
                     </div>
                     <div className={"LinksContainer"}>
                         <NavLink className={"Link"} to={"/"}>Home</NavLink>
-                        <NavLink className={"Link"} to={"/"}>TV Shows</NavLink>
+                        <NavLink className={"Link"} to={"/tv/shows"}>TV Shows</NavLink>
                         <NavLink className={"Link"} to={"/"}>Movies</NavLink>
-                        <NavLink className={"Link"} to={"/"}>Latest</NavLink>
-                        <NavLink className={"Link"} to={"/"}>My List</NavLink>
                     </div>
                     <div className={"ProfileContainer"}>
                         <div className={"SearchIconContainer"} onClick={() => this.setState({ isShow: !this.state.isShow })}>

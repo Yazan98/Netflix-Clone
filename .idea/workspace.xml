@@ -20,21 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b51958d-ff55-43a7-b6c0-bece3395a2b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/views/fragments/DialogComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/views/images/netflix_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/views/images/user.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/views/scss/general/GeneralStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/views/fragments/ColumnMoviesComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/views/pages/TvShowsComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/common/ToolbarComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/common/ToolbarComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/fragments/DialogComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/fragments/DialogComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/fragments/RowComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/fragments/TvShowRowComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/fragments/TrendingRowComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/fragments/TrendingRowComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/pages/HomePageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/pages/HomePageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/pages/LandingPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/pages/SearchPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/scss/general/GeneralStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/scss/general/GeneralStyle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/scss/main/MainHeaderComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/scss/main/MainHeaderComponent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/scss/main/MainPageStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/scss/main/MainPageStyle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/ApiManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ApiManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/Entities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Entities.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/InfoManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/InfoManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/LogicImpl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/LogicImpl.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601496287229</updated>
       <workItem from="1601496288291" duration="13677000" />
-      <workItem from="1601517187023" duration="5409000" />
+      <workItem from="1601517187023" duration="5498000" />
+      <workItem from="1601569607328" duration="6598000" />
     </task>
     <servers />
   </component>
@@ -132,9 +136,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601507382853" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601497473363">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601572375828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601497473363" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601572375828" />
   </component>
 </project>

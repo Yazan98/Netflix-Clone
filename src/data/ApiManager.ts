@@ -1,5 +1,5 @@
 import {ApiManagerImplementation} from "./LogicImpl";
-import {MovieEntity, TrendingResponse} from "./Entities";
+import {MovieEntity, TrendingResponse, TvShowEntity, TvShowsResponse} from "./Entities";
 import {InfoManager} from "./InfoManager";
 import {AxiosInstance} from "axios";
 
@@ -13,6 +13,8 @@ export class ApiManager implements ApiManagerImplementation {
     private POPULAR_MOVIES_API_LINK = `${(this.BASE_URL)}discover/movie?api_key=${InfoManager.PROJECT_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`
     private TOP_RATED_API_LINK = `${(this.BASE_URL)}movie/top_rated?api_key=${InfoManager.PROJECT_API_KEY}&language=en-US&page=1`
     private LATEST_API_LINK = `${(this.BASE_URL)}movie/now_playing?api_key=${InfoManager.PROJECT_API_KEY}&language=en-US`
+    private SEARCH_MOVIE_API_LINK = `${(this.BASE_URL)}search/movie?api_key=${InfoManager.PROJECT_API_KEY}&language=en-US&page=1&include_adult=false`
+    private TV_SHOWS_API_LINK = `${(this.BASE_URL)}tv/popular?api_key=${InfoManager.PROJECT_API_KEY}&language=en-US`
 
     initAxios(): AxiosInstance {
      return this.axios.create({
@@ -81,6 +83,53 @@ export class ApiManager implements ApiManagerImplementation {
                     result.push(this.getResultFromResponse(item))
                 })
                 return Promise.resolve(result)
+            })
+            .catch(function (error) {
+                return Promise.reject(error)
+            });
+    }
+
+    async searchOnMovieByName(name: string): Promise<Array<MovieEntity>> {
+        return await this.initAxios().get<TrendingResponse>(this.SEARCH_MOVIE_API_LINK + `&query=${name}`)
+            .then(response => {
+                let result: Array<MovieEntity> = [];
+                console.log("Latest Items : ", response.data.results as Array<MovieEntity>)
+                console.log("Latest Items : ", response.status)
+                console.log("Latest Items : ", response.statusText)
+                console.log("Search Request : ", response.request)
+                response.data.results.map(item => {
+                    result.push(this.getResultFromResponse(item))
+                })
+                return Promise.resolve(result)
+            })
+            .catch(function (error) {
+                return Promise.reject(error)
+            });
+    }
+
+    async getTvShows(): Promise<Array<TvShowEntity>> {
+        return await this.initAxios().get<TvShowsResponse>(this.TV_SHOWS_API_LINK)
+            .then(response => {
+                console.log("TvShows :: ", response)
+                console.log("TvShows :: ", response.data.results)
+                let results: Array<TvShowEntity> = [];
+                response.data.results.map(item => {
+                    let resultItem = new TvShowEntity();
+                    resultItem.id = item.id;
+                    resultItem.video = item.video;
+                    resultItem.vote_count = item.vote_count;
+                    resultItem.vote_average = item.vote_average;
+                    resultItem.name = item.name;
+                    resultItem.release_date = item.release_date;
+                    resultItem.original_language = item.original_language;
+                    resultItem.original_name = item.original_name;
+                    resultItem.backdrop_path = item.backdrop_path;
+                    resultItem.overview = item.overview;
+                    resultItem.poster_path = item.poster_path;
+                    resultItem.media_type = item.media_type;
+                    results.push(resultItem)
+                })
+                return Promise.resolve(results)
             })
             .catch(function (error) {
                 return Promise.reject(error)

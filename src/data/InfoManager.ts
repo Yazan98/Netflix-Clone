@@ -1,6 +1,6 @@
 import {InfoManagerImplementation} from "./LogicImpl";
 import {ApiManager} from "./ApiManager";
-import {MovieEntity} from "./Entities";
+import {MovieEntity, TvShowEntity} from "./Entities";
 
 export class InfoManager implements InfoManagerImplementation {
 
@@ -21,8 +21,16 @@ export class InfoManager implements InfoManagerImplementation {
         return await this.API_MANAGER.getTopRated();
     }
 
+    public async searchOnMovieByName(name: string): Promise<Array<MovieEntity>> {
+        return await this.API_MANAGER.searchOnMovieByName(name);
+    }
+
     public async getLatest(): Promise<Array<MovieEntity>> {
         return await this.API_MANAGER.getLatest();
+    }
+
+    public async getTvShows(): Promise<Array<TvShowEntity>> {
+        return await this.API_MANAGER.getTvShows();
     }
 
 }
