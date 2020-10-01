@@ -1,4 +1,4 @@
-export class TrendingMovieEntity {
+export class MovieEntity {
     public id: number = 0;
     public video: boolean = false
     public vote_count: number = 0
@@ -15,18 +15,36 @@ export class TrendingMovieEntity {
 }
 
 export class MainPageResponse {
+    public items: Array<MovieEntity> = []
+    public popularItems: Array<MovieEntity> = []
+    public topRated: Array<MovieEntity> = []
+    public latest: Array<MovieEntity> = []
+    public error: Error | undefined;
+    public status: boolean = false
+
     constructor(
-        public items: Array<TrendingMovieEntity>,
-        public error: Error | undefined,
-        public status: boolean = false
+        items: Array<MovieEntity>,
+        error: Error | undefined,
+       status: boolean = false
     ) {
+        this.error = error
+        this.items = items
+        this.status = status
     }
+
 }
 
 
 export class TrendingResponse {
     constructor(
-        public results: Array<TrendingMovieEntity>
+        public results: Array<MovieEntity>
+    ) {
+    }
+}
+
+export class SearchProps {
+    constructor(
+        public isShow: boolean
     ) {
     }
 }

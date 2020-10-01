@@ -1,14 +1,14 @@
 import React from 'react';
 import '../scss/main/MainPageStyle.scss'
 import {InfoManager} from "../../../data/InfoManager";
-import {TrendingMovieEntity} from "../../../data/Entities";
+import {MovieEntity} from "../../../data/Entities";
 
-export default class TrendingRowComponent extends React.Component<{ items: Array<TrendingMovieEntity> }> {
+export default class TrendingRowComponent extends React.Component<{ items: Array<MovieEntity>, title: string }> {
    render() {
-       let { items } = this.props;
+       let { items, title } = this.props;
        return (
            <div className="TrendingRowComponentContainer">
-               <h2 className={"Title"}>Trending Movies</h2>
+               <h2 className={"Title"}>{title}</h2>
                <div className={"TrendingRow"}>
                    {items.map(item => {
                        return <div className={"TrendingItem"}>

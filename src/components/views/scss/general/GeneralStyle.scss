@@ -1,0 +1,54 @@
+.ToolbarComponentContainer {
+  .ToolbarContainer {
+    display: flex;
+    padding: 1rem;
+
+    .ProfileContainer {
+      display: flex;
+
+      .SearchIconContainer {
+        padding: 0.5em;
+        cursor: pointer;
+
+        .SearchIcon {
+          width: 20px;
+          height: 20px;
+          color: white;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+
+
+
+      .UserIcon {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        margin-top: 0.5em;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+
+    .LinksContainer {
+      margin-top: 0.8em;
+      flex: 1;
+
+      .Link {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .LogoContainer {
+      .Image {
+        height: 50px;
+        width: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+}

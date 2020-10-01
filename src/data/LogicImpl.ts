@@ -1,11 +1,11 @@
-import {TrendingMovieEntity} from "./Entities";
+import {MovieEntity} from "./Entities";
 import {AxiosInstance} from "axios";
 
 export interface InfoManagerImplementation {
-    getTrendingMovies(): Promise<Array<TrendingMovieEntity>>
+    getTrendingMovies(): Promise<Array<MovieEntity>>
 }
 
 export interface ApiManagerImplementation {
     initAxios(): AxiosInstance,
-    getTrendingMovies(): Promise<Array<TrendingMovieEntity>>
+    getTrendingMovies(): Promise<Array<MovieEntity>>
 }
