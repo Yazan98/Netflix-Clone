@@ -20,24 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b51958d-ff55-43a7-b6c0-bece3395a2b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/views/fragments/ColumnMoviesComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/views/pages/TvShowsComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/common/ToolbarComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/common/ToolbarComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/fragments/DialogComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/fragments/DialogComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/fragments/RowComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/fragments/TvShowRowComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/fragments/TrendingRowComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/fragments/TrendingRowComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/pages/HomePageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/pages/HomePageComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/pages/LandingPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/pages/SearchPageComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/scss/general/GeneralStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/scss/general/GeneralStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/scss/main/MainHeaderComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/scss/main/MainHeaderComponent.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/scss/main/MainPageStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/scss/main/MainPageStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ApiManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ApiManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Entities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Entities.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/InfoManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/InfoManager.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +67,7 @@
       <updated>1601496287229</updated>
       <workItem from="1601496288291" duration="13677000" />
       <workItem from="1601517187023" duration="5498000" />
-      <workItem from="1601569607328" duration="6598000" />
+      <workItem from="1601569607328" duration="7482000" />
     </task>
     <servers />
   </component>

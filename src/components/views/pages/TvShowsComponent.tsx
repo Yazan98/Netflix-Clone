@@ -21,8 +21,8 @@ export default class TvShowsComponent extends React.Component<{}, TvShowsState> 
         return (
             <div className="HomePageComponentContainer">
                 <ToolbarComponent />
-                { this.state.status ? this.renderTrendingCover(this.state.items[0]) : <div style={{ height: "100vh", backgroundColor: "black" }}></div>}
-                { this.state.status ? this.renderTrendingItems(this.state.items) : <div style={{ height: "100vh", backgroundColor: "black" }}></div> }
+                { this.state.status ? this.renderTrendingCover(this.state.items[0]) : <div style={{ height: "100vh", backgroundColor: "black", color: "white" }}>ٍSomething Error Pls Refresh</div>}
+                { this.state.status ? this.renderTrendingItems(this.state.items) : <div style={{ height: "100vh", backgroundColor: "black", color: "white" }}>ٍSomething Error Pls Refresh</div> }
             </div>
         );
     }

@@ -58,7 +58,7 @@ export default class HomePageComponent extends React.Component<{}, MainPageRespo
     }
 
     private renderErrorCompnent() {
-        return <div style={{ height: "100vh", backgroundColor: "black" }}></div>
+        return <div style={{ height: "100vh", backgroundColor: "black", color: "white" }}>ٍSomething Error Pls Refresh</div>
     }
 
     componentDidMount() {

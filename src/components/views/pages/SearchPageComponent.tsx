@@ -20,7 +20,7 @@ export default class SearchPageComponent extends React.Component<any, SearchResp
         return (
             <div className="SearchPageComponent">
                 <ToolbarComponent />
-                {this.state.movies ? <ColumnMoviesComponent items={this.state.movies} title={"Search Result"} /> : <div style={{ height: "100vh", backgroundColor: "black" }}></div>}
+                {this.state.movies ? <ColumnMoviesComponent items={this.state.movies} title={"Search Result"} /> : <div style={{ height: "100vh", backgroundColor: "black", color: "white" }}>ٍSomething Error Pls Refresh</div>}
 
             </div>
         );
